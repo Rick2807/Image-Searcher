@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Imagen from './Imagen'
 
 const ListadoImagen = ({imagenes}) => {
@@ -12,6 +13,10 @@ const ListadoImagen = ({imagenes}) => {
             ))}
         </div>
     )
+}
+
+ListadoImagen.propTypes = {
+    imagenes: PropTypes.object.isRequired
 }
 
 export default ListadoImagen
